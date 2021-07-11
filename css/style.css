@@ -134,7 +134,7 @@ ul.button li a:hover{
 	color:#666;
 }
 .head-info {
-	position: absolute;
+	position: relative;
 	top: 35%;
 	left: 30%;
 	width: 42%;
