@@ -32,6 +32,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		</script>
 		<!-- start-smoth-scrolling -->
+		<!-- SLIDER -->
+		<script src="js/splide.min.js"></script>
+		<link rel="stylesheet" href="css/splide-sea-green.min.css">
 	</head>
 	<body>
 		<!-- header -->
@@ -109,18 +112,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!-- //header -->
 		<!-- service -->
-		<div id="services" class="service">
+		<div id="services" class="service splide" data-splide='{"type":"loop","perPage":3,"autoplay":true}'>
 			<!-- container -->
-			<div class="container">
-				<div class="service-grids">
-					<div class="col-md-4 service-grid service-left">
+			<div class="container splide__track">
+				<div class="service-grids splide__list" >
+					<div class="col-md-4 service-grid service-left splide__slide">
 						<div class="creative"> </div>
 						<h3>Objective</h3>
 						<p>Use knowledge and skills in providing professional guidance on
 							the rational drug use and handling.
 						</p>
 					</div>
-					<div class="col-md-4 service-grid service-middle">
+					<div class="col-md-4 service-grid service-middle splide__slide">
 						<div class="skills"> </div>
 						<h3>Work Experience</h3>
 						<p>Experience of more than three years
@@ -129,7 +132,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							Bliss Medical Centre 
 						</p>
 					</div>
-					<div class="col-md-4 service-grid service-right">
+					<div class="col-md-4 service-grid service-right splide__slide">
 						<div class="help"> </div>
 						<h3>Skills</h3>
 						<p>Specialized in good dispensing practices. 
@@ -139,12 +142,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							Excellent medical communication skills.
 						</p>
 					</div>
+					<div class="col-md-4 service-grid service-middle splide__slide">
+						<div class="skills"> </div>
+						<h3>Services</h3>
+						<p>Home based drug deliveries. 
+							Bodybuilding supplements.
+							Weight loss and detox supplements.
+							Offer locum services to registered pharmaceutical firms.
+						</p>
+					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
 			<!-- //container -->
 		</div>
 		<!-- //service -->
+		
+		<script>
+				new Splide( '.splide' ).mount();
+	
+		</script>
 		<!-- stories -->
 		<div id="stories" class="stories">
 			<!-- container -->
@@ -352,6 +369,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- //container -->
 		</div>
 		<!-- //contact -->
+		<!-- slogan -->
+		<div class="slogan">
+				Trusted medical essential services at your doorstep. You ask, I deliver		
+		</div>
 		<!-- footer -->
 		<div class="footer">
 			<!-- container -->
@@ -387,6 +408,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</script>
 									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- content-Get-in-touch -->
+	
 	</body>
 </html>
 

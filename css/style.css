@@ -188,6 +188,7 @@ ul.button li a:hover{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	margin: 3em 0;
+	font-weight: bold;
 }
 .service-grid p{
 	font-size:16px;
@@ -212,6 +213,7 @@ ul.button li a:hover{
 	height:108px;
 	margin:0 auto;
 }
+
 .service-left:hover div.creative{
 	background: url(../images/icons.png) no-repeat 0px -115px;
 }
@@ -325,6 +327,14 @@ ul.button li a:hover{
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
+}
+/* slogan */
+.slogan{
+	text-align: center;
+	color: burlywood;
+	font-size: 5ch;
+	font-family: serif;
+	font-style: italic;
 }
 /*-- contact --*/
 .contact{
