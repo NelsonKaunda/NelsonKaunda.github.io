@@ -111,8 +111,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 		<!-- //header -->
-		<!-- service -->
-		<div id="services" class="service splide" data-splide='{"type":"loop","perPage":3,"autoplay":true}'>
+		<!-- service data-splide='{"type":"loop","perPage":3,"autoplay":true}' -->
+		<div id="services" class="service splide" >
 			<!-- container -->
 			<div class="container splide__track">
 				<div class="service-grids splide__list" >
@@ -159,9 +159,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- //service -->
 		
 		<script>
-				new Splide( '.splide' ).mount();
+			var resize = function() {
+				var screenWidth = parseInt($('body').width());
+				
+				if (screenWidth < 480) {
+				 var small = new Splide( '.splide',{"type":"loop","perPage":1,"autoplay":true} ).mount();
+				 
+				}
+				else if (screenWidth >= 480 & screenWidth < 720) {
+				 var medium = new Splide( '.splide',{"type":"loop","perPage":2,"autoplay":true} ).mount();
+				}
+				else {
+				 var large = new Splide( '.splide',{"type":"loop","perPage":3,"autoplay":true} ).mount();
+				}
+			}
+			
+			// $( window ).resize(function() {
+			// resize();
+			
+			// });
+
+			$( document ).ready(function() {
+			resize();
+			});
+			
 	
 		</script>
+	
 		<!-- stories -->
 		<div id="stories" class="stories">
 			<!-- container -->
@@ -239,7 +263,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</a>
 						</div> -->
 						<div class="clearfix"> </div>
-						
+					
 					<!---- Script for gallery Here --->
 					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 						<script type="text/javascript">
@@ -317,7 +341,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- Work Ends Here -->
 				</div>
 				<!-- //photography -->
-			</div>
+			
 			<!-- //container -->
 		</div>
 		<!-- //stories -->
